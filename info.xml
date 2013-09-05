@@ -6,7 +6,7 @@
     <parameters>
         <param name="bootstrap" label="Twitter bootstrap download URL" type="text"
                volatile="yes" onupgrade="W"
-               default="ftp://ftp.anakeen.com/third-party/bootstrap-2.3.2.zip"/>
+               default="http://ftp.dynacase.org/third-party/bootstrap-2.3.2.zip"/>
     </parameters>
 
     <post-install>
