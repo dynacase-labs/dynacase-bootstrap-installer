@@ -1,6 +1,7 @@
-PACKAGE=dynacase-bootstrap-installer
 
 AC_INIT(./Makefile.in)
+AC_SUBST(PACKAGE)
+PACKAGE=dynacase-bootstrap-3-installer
 AC_SUBST(VERSION)
 VERSION=`cat VERSION`
 AC_SUBST(RELEASE)

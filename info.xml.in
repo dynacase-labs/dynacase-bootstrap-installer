@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<module name="dynacase-bootstrap-installer" version="@VERSION@" release="@RELEASE@" basecomponent="no">
+<module name="@PACKAGE@" version="@VERSION@" release="@RELEASE@">
 
     <description>Bootstrap is a GUI library</description>
-
+ 
     <parameters>
         <param name="bootstrap" label="Twitter bootstrap download URL" type="text"
                volatile="yes" onupgrade="W"
@@ -10,14 +10,14 @@
     </parameters>
 
     <post-install>
-        <download href="@bootstrap" action="programs/bootstrap_install">
+        <download href="@bootstrap" action="programs/bootstrap3_install">
             <label lang="en">Download and install bootstrap
             </label>
         </download>
     </post-install>
 
     <post-upgrade>
-        <download href="@bootstrap" action="programs/bootstrap_install">
+        <download href="@bootstrap" action="programs/bootstrap3_install">
             <label lang="en">Download and install bootstrap
             </label>
         </download>
