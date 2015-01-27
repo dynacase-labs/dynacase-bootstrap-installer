@@ -8,6 +8,8 @@ webinst:
 	cp info.xml tmp/info.xml
 	tar -C tmp -zcf ${PACKAGE}-${VERSION}-${RELEASE}.webinst info.xml content.tar.gz
 
+webinst-all : webinst
+
 clean:
 	rm -Rf tmp
 	rm -f dynacase-bootstrap-*.webinst
